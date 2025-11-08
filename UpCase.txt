@@ -1,0 +1,17 @@
+public class UpCase {
+
+    public static void main(String[] args) {
+        char ch;
+
+        for (int i = 0; i < 10; i++) {
+            ch = (char) ('a' + i);
+            System.out.print(ch + ";");
+
+            // эта команда отключает шестой бит
+            ch = (char) ((int) ch & 0xffdf);
+            System.out.print(ch + " ");
+        }
+
+    } // main(String[]) method
+
+} // UpCase class
