@@ -1,3 +1,19 @@
+class Vehicle {
+    int maxSpeed;
+    
+    public Vehicle() {
+        this.maxSpeed = 120;
+    }
+    
+    public double distance(double time) {
+        return maxSpeed * time;
+    }
+    
+    public int getMaxSpeed() {
+        return maxSpeed;
+    }
+}
+
 class Auto extends Vehicle {
     boolean sunroof;
 }
